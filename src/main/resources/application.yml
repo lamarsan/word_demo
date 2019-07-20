@@ -1,0 +1,10 @@
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
+    settings:
+      template_update_delay: 0
+      classic_compatible: true
+      number_format: 0.######
+      template_exception_handler: ignore
+      default_encoding: UTF-8
