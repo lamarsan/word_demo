@@ -37,7 +37,7 @@ public class ExportMyWord {
      */
     public void createWord(Map<String, Object> dataMap, String templateName, String saveFilePath) {
         //加载模板(路径)数据
-        config.setClassForTemplateLoading(this.getClass(), "/templates");
+        config.setClassForTemplateLoading(this.getClass(), "/");
         //设置异常处理器 这样的话 即使没有属性也不会出错 如：${list.name}...不会报错
         config.setTemplateExceptionHandler(TemplateExceptionHandler.IGNORE_HANDLER);
         Template template = null;
